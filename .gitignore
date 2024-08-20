@@ -1,5 +1,8 @@
 # Cypress videos
-*.mp4
+cypress/videos/*.mp4
+
+# Cypress screenshots
+cypress/screenshots/
 
 # Compiled output
 /tmp
