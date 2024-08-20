@@ -1,5 +1,5 @@
 # Cypress videos
-cypress/videos/*.mp4
+cypress/videos/
 
 # Cypress screenshots
 cypress/screenshots/
