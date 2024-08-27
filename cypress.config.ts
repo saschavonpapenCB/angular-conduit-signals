@@ -5,6 +5,6 @@ export default defineConfig({
   viewportWidth: 1000,
   video: true,
   e2e: {
-    baseUrl: 'http://localhost:4200',
+    baseUrl: process.env['CYPRESS_BASE_URL'] || 'http://localhost:4200',
   },
 });
