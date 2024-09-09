@@ -19,11 +19,6 @@ COPY ./default.conf /etc/nginx/conf.d
 
 COPY --from=build /app/dist/angular-conduit-signals /usr/share/nginx/html
 
-COPY replace-env.sh /usr/local/bin/replace-env
-RUN chmod +x /usr/local/bin/replace-env
-
-RUN /usr/local/bin/replace-env
-
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
