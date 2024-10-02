@@ -4,6 +4,4 @@ WORKDIR /e2e
 
 COPY ../ /e2e
 
-ENV CYPRESS_BASE_URL=http://frontend
-
 CMD ["cypress", "run"]
